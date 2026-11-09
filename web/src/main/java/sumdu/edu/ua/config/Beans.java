@@ -1,4 +1,4 @@
-package sumdu.edu.ua.web.http;
+package sumdu.edu.ua.config;
 
 import sumdu.edu.ua.core.service.CommentService;
 import sumdu.edu.ua.core.port.CatalogRepositoryPort;
@@ -23,3 +23,4 @@ public class Beans {
     public static CommentRepositoryPort getCommentRepo() { return commentRepo; }
     public static CommentService getCommentService() { return commentService; }
 }
+

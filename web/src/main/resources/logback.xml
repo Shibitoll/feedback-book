@@ -5,6 +5,7 @@
         </encoder>
     </appender>
 
+    <!-- Вмикаємо виведення всіх логів проєкту від рівня INFO і вище -->
     <logger name="sumdu.edu.ua" level="INFO"/>
 
     <root level="INFO">
