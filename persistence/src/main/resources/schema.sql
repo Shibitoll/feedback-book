@@ -18,6 +18,6 @@ create table if not exists comments (
     constraint fk_book foreign key (book_id) references books(id) on delete cascade
     );
 
-INSERT INTO books (title, author, pub_year) VALUES ('Захар Беркут', 'Іван Франко', 1883);
 INSERT INTO books (title, author, pub_year) VALUES ('Кобзар', 'Тарас Шевченко', 1840);
-INSERT INTO books (title, author, pub_year) VALUES ('Маруся Чурай', 'Ліна Костенко', 1979);
+INSERT INTO books (title, author, pub_year) VALUES ('1984', 'Джордж Оруелл', 1949);
+INSERT INTO books (title, author, pub_year) VALUES ('Володар перснів', 'Дж. Р. Р. Толкін', 1954);

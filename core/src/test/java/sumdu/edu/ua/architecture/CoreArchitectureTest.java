@@ -10,7 +10,7 @@ public class CoreArchitectureTest {
     @Test
     void coreShouldNotDependOnWebOrPersistence() {
         JavaClasses imported = new ClassFileImporter()
-                .importPackages("sumdu.edu.ua.");
+                .importPackages("sumdu.edu.ua");
 
         noClasses()
                 .that().resideInAPackage("..core..")
