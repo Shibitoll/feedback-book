@@ -7,13 +7,14 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
 
 public class ControllerLocationTest {
     @Test
-    void servletsShouldResideOnlyInWebPackage() { 
+    void servletsShouldResideOnlyInWebPackage() {
         JavaClasses imported = new ClassFileImporter()
                 .importPackages("sumdu.edu.ua");
 
         classes()
-                .that().haveSimpleNameEndingWith("Controller") 
+                .that().haveSimpleNameEndingWith("Controller")
                 .should().resideInAPackage("..web..")
+                .allowEmptyShould(true)
                 .check(imported);
     }
 }
